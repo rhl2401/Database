@@ -16,7 +16,7 @@ include_once 'includes/functions.php';
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="background">
     <div class="contianer-fluid">
         <div class="row justify-content-center no-gutters">
             <div class="col-10 col-sm-8 col-md-8 col-lg-6 col-xl-4">
@@ -56,7 +56,21 @@ include_once 'includes/functions.php';
                     </div>
 
                     <div class="collapse" id="collapse-login">
-
+                        <h2>Login</h2>
+                        <form action="includes/process_login.php" method="post" name="login_form">
+                            <div class="row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" name="username" id="username" aria-describedby="username-help">
+                                    <small id="username-help" class="form-text text-muted">This was chosen when you registered.</small>
+                                </div>
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                </div>
+                            </div>
+                            <button type="button" onclick="formhash(this.form, this.form.password)" class="btn btn-primary">Login</button>
+                        </form>
                     </div>
 
                 </div>

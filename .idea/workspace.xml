@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c5d2b41-caaf-403f-9b16-808884faa285" name="Default Changelist" comment="">
+    <list default="true" id="8c5d2b41-caaf-403f-9b16-808884faa285" name="Default Changelist" comment="Made registration system">
+      <change afterPath="$PROJECT_DIR$/map.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/register.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/register.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/process_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/process_login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <updated>1600775585219</updated>
       <workItem from="1600775586342" duration="1119000" />
       <workItem from="1601028839337" duration="28000" />
-      <workItem from="1601028891630" duration="8313000" />
+      <workItem from="1601028891630" duration="8706000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1601035295595</created>
@@ -87,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601037971013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made registration system">
+      <created>1601038241144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601038241144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +107,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit #2" />
     <MESSAGE value="Initial commit #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit #3" />
+    <MESSAGE value="Made registration system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made registration system" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Deployment" timestamp="1601034068752">
@@ -114,10 +125,10 @@
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600788867259" />
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601036461887" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600776072228" />
-    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601037970492">
+    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601038248979">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601037970492" />
+    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601038248979" />
     <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1601031910037">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -150,10 +161,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="643" height="194" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601032970649" />
-    <state x="2714" y="443" key="NewPhpFileDialog" timestamp="1601036041508">
+    <state x="2714" y="443" key="NewPhpFileDialog" timestamp="1601038262719">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601036041508" />
+    <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601038262719" />
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600776065604" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1601034236504">
       <screen x="1920" y="0" width="1920" height="1040" />

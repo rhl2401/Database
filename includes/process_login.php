@@ -10,7 +10,7 @@ if (isset($_POST['username'], $_POST['p'])) {
 
     if (login($username, $password, $mysqli) == true) {
         // Login success
-        header('Location: ../protected_page.php');
+        header('Location: ../map.php');
     } else {
         // Login failed
         header('Location: ../index.php?error=1');
