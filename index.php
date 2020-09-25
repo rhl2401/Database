@@ -11,6 +11,9 @@ include_once 'includes/functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <script type="text/JavaScript" src="js/sha512.js"></script>
+    <script type="text/JavaScript" src="js/forms.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,29 +25,40 @@ include_once 'includes/functions.php';
                     <hr>
                     <p>Ever wondered where you have traveled? With this service, you can finally get the answer. Register below for an incredible tracking experience. <br>Start for free!</p>
 
-                    <form action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" method="post" name="registration_form">
-                        <div class="form-group">
-                            <label for="email">Full name</label>
-                            <input type="email" class="form-control" name="email" id="email">
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-6">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" name="username" id="username" aria-describedby="username-help">
-                                <small id="username-help" class="form-text text-muted">This will be used for login.</small>
-                            </div>
-                            <div class="form-group col-12 col-md-6">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password">
-                            </div>
-                        </div>
+                    <a href="#collapse-register" class="btn btn-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-register">Sign up</a>
+                    <a href="#collapse-login" class="btn btn-info" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-login">Login</a>
 
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Register!</button>
-                    </form>
+                    <div class="collapse" id="collapse-register">
+                        <h2>Sign up</h2>
+                        <form action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" method="post" name="registration_form">
+                            <div class="form-group">
+                                <label for="email">Full name</label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" name="username" id="username" aria-describedby="username-help">
+                                    <small id="username-help" class="form-text text-muted">This will be used for login.</small>
+                                </div>
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions</label>
+                            </div>
+                            <button type="button" onclick="formhash(this.form, this.form.password)" class="btn btn-primary">Register!</button>
+                        </form>
+                    </div>
+
+                    <div class="collapse" id="collapse-login">
+
+                    </div>
+
                 </div>
             </div>
         </div>

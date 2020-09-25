@@ -55,6 +55,6 @@ if (isset($_POST['fullname'], $_POST['username'], $_POST['p'])) {
                 header('Location: ../error.php?err=Registration failure: INSERT');
             }
         }
-        header('Location: ./register_success.php');
+        header('Location: ./index.php');
     }
 }

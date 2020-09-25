@@ -16,4 +16,8 @@ body {
   text-align: center;
 }
 
+.btn[data-toggle=collapse] {
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
