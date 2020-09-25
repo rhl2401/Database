@@ -1,7 +1,7 @@
 <?php
+include_once 'includes/register.inc.php';
+include_once 'includes/functions.php';
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +22,7 @@
                     <hr>
                     <p>Ever wondered where you have traveled? With this service, you can finally get the answer. Register below for an incredible tracking experience. <br>Start for free!</p>
 
-                    <form>
+                    <form action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" method="post" name="registration_form">
                         <div class="form-group">
                             <label for="email">Full name</label>
                             <input type="email" class="form-control" name="email" id="email">
