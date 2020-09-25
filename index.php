@@ -32,8 +32,8 @@ include_once 'includes/functions.php';
                         <h2>Sign up</h2>
                         <form action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" method="post" name="registration_form">
                             <div class="form-group">
-                                <label for="email">Full name</label>
-                                <input type="email" class="form-control" name="email" id="email">
+                                <label for="fullname">Full name</label>
+                                <input type="text" class="form-control" name="fullname" id="fullname">
                             </div>
                             <div class="row">
                                 <div class="form-group col-12 col-md-6">
