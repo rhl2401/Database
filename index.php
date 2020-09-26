@@ -20,7 +20,7 @@ include_once 'includes/functions.php';
     <div class="contianer-fluid">
         <div class="row justify-content-center no-gutters">
             <div class="col-10 col-sm-8 col-md-8 col-lg-6 col-xl-4">
-                <div class="box">
+                <div class="box front-page">
                     <h1>Tracking at it's best!</h1>
                     <hr>
                     <p>Ever wondered where you have traveled? With this service, you can finally get the answer. Register below for an incredible tracking experience. <br>Start for free!</p>

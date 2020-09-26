@@ -1,4 +1,10 @@
 
+$breakpoint-desktop: 576px;
+
+html {
+    font-family: Verdana,Geneva,sans-serif;
+}
+
 body.background {
     background: url(img/FB.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -11,9 +17,11 @@ body.background {
 .box {
     border-radius: 30px;
     background-color: #fff;
-    margin-top: 150px;
-    padding: 40px;
+    padding: 30px;
+}
 
+.box.front-page {
+    margin-top: 150px;
     h1 {
         text-align: center;
     }
@@ -21,4 +29,38 @@ body.background {
 
 .btn[data-toggle="collapse"] {
     margin-bottom: 20px;
+}
+
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#map-overlay {
+    z-index: 1000;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+
+    .box {
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    .box.desktop {
+        width: 15vw;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .desktop {display: block;}
+    .mobile {display: none;}
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .desktop {display: none;}
+    .mobile {display: block;}
 }
