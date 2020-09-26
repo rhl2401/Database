@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5d2b41-caaf-403f-9b16-808884faa285" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/map.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +64,7 @@
       <workItem from="1600775586342" duration="1119000" />
       <workItem from="1601028839337" duration="28000" />
       <workItem from="1601028891630" duration="8827000" />
-      <workItem from="1601112084921" duration="4049000" />
+      <workItem from="1601112084921" duration="5271000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1601035295595</created>
@@ -107,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601038679183</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created map">
+      <created>1601117304439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601117304439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +121,8 @@
     <MESSAGE value="Initial commit #3" />
     <MESSAGE value="Made registration system" />
     <MESSAGE value="Added login capability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login capability" />
+    <MESSAGE value="Created map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created map" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Deployment" timestamp="1601034068752">
@@ -137,10 +139,10 @@
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600788867259" />
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601036461887" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600776072228" />
-    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601038678659">
+    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601117303716">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601038678659" />
+    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601117303716" />
     <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1601031910037">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -182,9 +184,17 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601034236504" />
+    <state x="2676" y="342" width="408" height="352" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601117692323">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2676" y="342" width="408" height="352" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601117692323" />
     <state x="2765" y="250" key="ftp.server.browser" timestamp="1601029940602">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2765" y="250" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601029940602" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1601118379762">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601118379762" />
   </component>
 </project>

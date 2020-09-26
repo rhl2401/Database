@@ -55,6 +55,25 @@ sec_session_start();
         }).addTo(mymap);
     </script>
 
+    <?php
+        include_once "includes/db_connect.php";
+
+        $sql = "SELECT loc_lat, loc_long, dt_created FROM locations WHERE user_id = " . $_SESSION['user_id'];
+        $result = $mysqli->query($sql);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                // Create a marker
+                echo "<script>L.marker([". $row["loc_lat"] .", ". $row["loc_long"] ."], {title: '". $_SESSION["username"] ."'}).addTo(mymap).bindPopup('<b>". $_SESSION["username"] ."</b><br><small>". $row["dt_created"] ."</small>').openPopup();</script>";
+            }
+        } else {
+            echo "<script>console.log('0 results for current user')</script>";
+        }
+
+    ?>
+
+
 <?php else : ?>
     <p>
         <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
