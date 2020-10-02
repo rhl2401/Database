@@ -64,3 +64,42 @@ body.background {
     .desktop {display: none;}
     .mobile {display: block;}
 }
+
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(248, 249, 250);
+    font-size: 18px;
+    transition: background-color ease .3s;
+
+    &:link {
+        border: none;
+        text-decoration: none;
+    }
+
+    &:visited {
+        border: none;
+        text-decoration: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken(rgb(248, 249, 250), 4);
+    }
+
+    &:active {
+        border: none;
+        text-decoration: none;
+    }
+}
+
+.btn-success {
+    background-color: rgb(40, 167, 69);
+    color: #fff;
+
+    &:hover {
+        background-color: darken(rgb(40, 167, 69), 4);
+    }
+}

@@ -64,5 +64,37 @@ body.background {
     display: block;
   }
 }
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  font-size: 18px;
+  transition: background-color ease 0.3s;
+}
+.btn:link {
+  border: none;
+  text-decoration: none;
+}
+.btn:visited {
+  border: none;
+  text-decoration: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #eceff2;
+}
+.btn:active {
+  border: none;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: #24973e;
+}
 
 /*# sourceMappingURL=style.css.map */
