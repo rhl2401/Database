@@ -21,3 +21,5 @@ Jeg har brugt mit eget login-system, der er skrevet med en masse sikkerhedsfunkt
 Der bruges en kort-service til at vise kortet og så laves der punkter ud fra PHP og JS. 
 
 Der kræves login for at se kortet - ellers bliver man sendt tilbage til login-siden. 
+
+**FYI: Hvis du ikke har en SCSS-compiler, skal du bare kigge i style.css-filen og ignorere style.scss**
