@@ -3,7 +3,7 @@ Se projektet på min hjemmeside: [https://tracking.rasmuslauridsen.dk](https://t
 Opret en bruger og aktiver tracking. Brug helt telefonen, da GPS'en er mest præcis på den. Gå lidt rundt og se prikkerne. Genindlæs evt. siden, hvis der skulle være nogen fejl. Der kommer prikker alle steder, du er blevet logget. 
 
 Hvis du loader min konto (brugerid=1), vil du se en tur rundt, hvor jeg kørte i bil. 
-Du starter som brugerniveau "free", men fx min konto er admin.
+Du starter som brugerniveau "free", men fx min konto er admin. Pt. gør det ingen forskel ud over den der label i toppen. Det er dog nemt at differentiere og laver funktioner specifikt til hvert brugerniveau.
 
 ### Database
 Alle passwords er hashet 2 gange. Først client-side, så de ikke transporteres usikret på trods af en post-request. Dernæst hashes de igen på serveren før de sættes ind i databasen. 
