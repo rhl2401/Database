@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c5d2b41-caaf-403f-9b16-808884faa285" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/map.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postservice.php" beforeDir="false" afterPath="$PROJECT_DIR$/postservice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e55bed66-5b01-4536-8332-ba34fc0a3237" />
   </component>
   <component name="ProjectId" id="1hriPBSgLbKj6hxIZJfkvbb6JhH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,7 +69,7 @@
       <workItem from="1601028891630" duration="8827000" />
       <workItem from="1601112084921" duration="7869000" />
       <workItem from="1601630154474" duration="10563000" />
-      <workItem from="1601721303528" duration="5031000" />
+      <workItem from="1601721303528" duration="6210000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1601035295595</created>
@@ -129,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601641248647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished up">
+      <created>1601737704340</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601737704340</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +150,8 @@
     <MESSAGE value="Created map" />
     <MESSAGE value="Print own markers on map" />
     <MESSAGE value="V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="V2" />
+    <MESSAGE value="Finished up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Deployment" timestamp="1601034068752">
@@ -162,10 +168,10 @@
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600788867259" />
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601036461887" />
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600776072228" />
-    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601641248061">
+    <state x="2505" y="107" key="CommitChangelistDialog2" timestamp="1601737703718">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601641248061" />
+    <state x="2505" y="107" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601737703718" />
     <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1601031910037">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -178,10 +184,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601035226997" />
-    <state x="2718" y="400" key="Github.ShareDialog" timestamp="1601035219056">
+    <state x="2741" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1601737739856">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2718" y="400" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601035219056" />
+    <state x="2741" y="432" key="Github.Dialog.Accounts.Choose/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601737739856" />
+    <state x="2718" y="400" key="Github.ShareDialog" timestamp="1601737731442">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2718" y="400" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1601737731442" />
     <state width="643" height="194" key="GridCell.Tab.0.bottom" timestamp="1601032970649">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
