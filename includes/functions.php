@@ -23,14 +23,22 @@ function sec_session_start() {
 
 function login($username, $password, $mysqli) {
     // Using prepared statements means that SQL injection is not possible.
-    if ($stmt = $mysqli->prepare("SELECT user_id, password FROM users WHERE username = ? LIMIT 1")) {
+    if ($stmt = $mysqli->prepare("SELECT user_id, password, membership FROM users WHERE username = ? LIMIT 1")) {
         $stmt->bind_param('s', $username);
         $stmt->execute();
         $stmt->store_result();
 
         // get variables from result.
-        $stmt->bind_result($user_id, $db_password);
+        $stmt->bind_result($user_id, $db_password, $membership);
         $stmt->fetch();
+
+        $sql = $mysqli->prepare("SELECT description FROM member_levels WHERE member_level_id = ?");
+        $sql->bind_param('i', $membership);
+        $sql->execute();
+        $sql->store_result();
+        $sql->bind_result($member_level);
+        $sql->fetch();
+        $_SESSION["membership_level"] = $member_level;
 
         if ($stmt->num_rows == 1) {
             if (password_verify($password, $db_password)) {

@@ -14,6 +14,7 @@ if ($action == "uploadLocation") {
     $lat = filter_input(INPUT_POST, "lat", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
     $long = filter_input(INPUT_POST, "long", FILTER_SANITIZE_NUMBER_FLOAT,FILTER_FLAG_ALLOW_FRACTION);
     $response["lat"] = $lat;
+    $response["long"] = $long;
 
     // Insert into DB
     $stmt = $mysqli->prepare("INSERT INTO locations (user_id, loc_lat, loc_long) VALUES (?, ?, ?)");
@@ -21,6 +22,4 @@ if ($action == "uploadLocation") {
     $response["success"] = $stmt->execute();
 }
 
-$response["test"] = $_POST;
-$response["action"] = $action;
 echo json_encode($response);

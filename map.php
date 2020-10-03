@@ -27,14 +27,25 @@ sec_session_start();
 
     <div id="map-overlay">
         <div class="box desktop">
-            <h1>Hi, <?php echo htmlentities($_SESSION['username']); ?></h1>
+            <h1 class="inline">Hi, <?php echo htmlentities($_SESSION['username']); ?></h1>
+            <p class="label"><?php echo $_SESSION["membership_level"]; ?></p>
             <p>This map shows your location history that you have recorded using this website. <br><br>Furthermore, you can click at each marker to see when your location was recorded.</p>
-            <br>
-            <p>Your current position is: <br><span id="position"></span></p>
             <br>
             <h3>Activate tracking</h3>
             <p>Enter the interval of saving your location below and hit start</p>
-            <button type="button" class="btn btn-success">Start!</button>
+            <p>Interval (mins.):</p>
+            <input type="number" id="interval" class="input-small inline" value="2">
+            <button type="button" id="track-btn" class="btn btn-success">Start!</button>
+            <br>
+            <h3>View other user's location</h3>
+            <p>Enter the user id of your desired user in order to show their track on the map.</p>
+            <p>Your id: <?php echo $_SESSION["user_id"]; ?></p>
+            <form action="map.php" method="get">
+                <input type="number" id="user-id-track" name="u" class="input-small inline" placeholder="ID">
+                <input type="submit" class="btn btn-success" value="Load user">
+            </form>
+            <br><br><br>
+            <a href="includes/logout.php" id="logout" class="btn btn-danger">Log out</a>
         </div>
     </div>
 
@@ -103,9 +114,34 @@ sec_session_start();
                 lat: position.coords.latitude,
                 long: position.coords.longitude
             }, function(data, status){
-                console.log(JSON.parse(data));
+                let response = JSON.parse(data);
+                console.log(response);
+                if (response.success) {
+                    L.marker([response.lat, response.long], {title: "<?php echo $_SESSION["username"]; ?>"}).addTo(mymap).bindPopup('<?php echo $_SESSION["username"]; ?>');
+                } else {
+                    console.log("Failed to uplaod location");
+                }
             });
         }
+
+
+        let interval = 1000;
+        let trackingActive = false;
+        let tracking_interval;
+        $("#track-btn").click(function() {
+            if (!trackingActive) {
+                trackingActive = true;
+                interval = $("#interval").val() * 1000 * 60;
+                $("#track-btn").text("Tracking...");
+                tracking_interval = setInterval(function(){saveLocation()}, interval);
+                console.log("Started tracking with interval: " + interval);
+            } else {
+                trackingActive = false;
+                clearInterval(tracking_interval);
+                $("#track-btn").text("Start!");
+                console.log("Stopped tracking");
+            }
+        });
 
 
     </script>
@@ -113,7 +149,13 @@ sec_session_start();
     <?php
         include_once "includes/db_connect.php";
 
-        $sql = "SELECT loc_lat, loc_long, dt_created FROM locations WHERE user_id = " . $_SESSION['user_id'];
+        if (isset($_GET["u"])) {
+            $loc_user_id = filter_input(INPUT_GET, "u", FILTER_SANITIZE_NUMBER_INT);
+        } else {
+            $loc_user_id = filter_var($_SESSION["user_id"], FILTER_SANITIZE_NUMBER_INT);
+        }
+
+        $sql = "SELECT loc_lat, loc_long, dt_created FROM locations WHERE user_id = " . $loc_user_id;
         $result = $mysqli->query($sql);
 
         if ($result->num_rows > 0) {
